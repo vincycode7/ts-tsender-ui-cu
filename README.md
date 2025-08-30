@@ -1,3 +1,9 @@
+# TODO: Create a basic react/nextjs application
+
+# TODO: Connect our wallet, with a nicer connect application
+
+# TODO: Implement this function
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +40,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Test Addresses
+Token Address
+: 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+
+Recipients
+: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+
+Amount
+: 100
