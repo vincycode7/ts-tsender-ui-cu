@@ -1,49 +1,41 @@
-import React from 'react';
-
-interface InputFieldProps {
+export interface InputFormProps {
   label: string;
   placeholder: string;
-  value: string;
-  type?: React.HTMLInputTypeAttribute;
+  value?: string;
+  type?: string;
   large?: boolean;
-  onChange: (
+  onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
 }
 
-const InputField: React.FC<InputFieldProps> = ({
+export function InputForm({
   label,
   placeholder,
   value,
-  type = 'text',
-  large = false,
+  type,
+  large,
   onChange,
-}) => {
-  const baseStyles =
-    'w-full px-3 pt-1 pb-20 mb-5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent';
-  const textareaStyles = large ? `${baseStyles} h-32 resize-none` : baseStyles;
-
+}: InputFormProps) {
   return (
-    <div className="flex flex-col space-y-2">
-      <label className="text-sm font-medium text-gray-700 mt-2">{label}</label>
+    <div className="flex flex-col gap-1.5">
+      <label className="text-zinc-600 font-medium text-sm">{label}</label>
       {large ? (
         <textarea
-          className={textareaStyles}
+          className={`bg-white py-2 px-3 border border-zinc-300 placeholder:text-zinc-500 text-zinc-900 shadow-xs rounded-lg focus:ring-[4px] focus:ring-zinc-400/15 focus:outline-none h-24 align-text-top`}
           placeholder={placeholder}
-          value={value}
+          value={value || ''}
           onChange={onChange}
         />
       ) : (
         <input
-          className={baseStyles}
+          className={`bg-white py-2 px-3 border border-zinc-300 placeholder:text-zinc-500 text-zinc-900 shadow-xs rounded-lg focus:ring-[4px] focus:ring-zinc-400/15 focus:outline-none`}
           type={type}
           placeholder={placeholder}
-          value={value}
+          value={value || ''}
           onChange={onChange}
         />
       )}
     </div>
   );
-};
-
-export default InputField;
+}

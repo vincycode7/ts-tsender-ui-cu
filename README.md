@@ -41,13 +41,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
 Test Addresses
 Token Address
 : 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
 
 Recipients
 : 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
-
+: 0xCb6066D231A28F987Cf6B652000D90f6d99e128b
+: 0x976EA74026E726554dB657fA54763abd0C3a0aa9
+: 12BU6D9JjuB5JZv7i17Mnhbd73eixtmJp94MP45PsmoX
 Amount
 : 100
