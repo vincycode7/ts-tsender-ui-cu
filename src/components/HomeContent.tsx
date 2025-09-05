@@ -13,7 +13,7 @@ export default function HomeContent() {
       {!isConnected ? (
         <div className="flex items-center justify-center h-[60vh]">
           <h2 className="text-xl font-medium text-zinc-600 animate-bounce">
-            Please connect a wallet...
+            Please connect ...
           </h2>
         </div>
       ) : (
